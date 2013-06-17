@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>rpm_iteration_team_flow</title>
+
+
+    <script type="text/javascript" src="https://rally1.rallydev.com/apps/2.0rc1/sdk-debug.js"></script>
+
+    <script type="text/javascript">
+        // I am keeping the extra , in there to simplify my code. If someone is actually using an old version of IE to make an app let me know.
+        Rally.loadScripts(
+                [
+                      "RpmTree.js",
+                      "DataAggregator.js",
+                      "AreaChart.js",
+                      "App.js",
+                ],
+        function() {
+            Rally.launchApp('CustomApp', {
+                name:"rpm_iteration_team_flow"
+            });
+        }, true);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body></body>
+</html>
